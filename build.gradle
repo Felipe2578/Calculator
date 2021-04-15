@@ -1,0 +1,19 @@
+plugins {
+    id 'java'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation group: 'io.appium', name: 'java-client', version: '7.3.0'
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    implementation group: 'info.cukes', name: 'cucumber-java', version: '1.2.5'
+    testImplementation group: 'info.cukes', name: 'cucumber-junit', version: '1.2.5'
+
+}
+
